@@ -10,7 +10,7 @@ class App < Sinatra::Base
     def p_to_i(i) params[i].to_i
     # @num1 = params[:num1].to_i
     # @num2 = params[:num2].to_i
-    "#{p_to_i(:num1) * p_to_i(:num2)}"
+    "#{params[:num1].to_i * params[:num2].to_i}"
   end
 
 end
